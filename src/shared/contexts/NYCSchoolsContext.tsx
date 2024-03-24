@@ -1,5 +1,5 @@
 /*
-Abstract Context making data available to many components withing having to pass
+Abstract Context making data available to many components without having to pass
 directly from parent to nested children
 */
 

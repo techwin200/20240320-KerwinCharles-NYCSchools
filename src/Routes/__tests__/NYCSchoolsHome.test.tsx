@@ -5,16 +5,10 @@ This is a basic test demonstrating how to test individual components in the appl
 import React from "react";
 import NYCSchoolsHome from "../NYCSchoolsHome";
 import { render, screen } from "@testing-library/react";
-import { http } from "msw";
 import "@testing-library/jest-dom";
 
 describe("<NYCSchoolsHome />", () => {
   beforeEach(() => {
-    http.get("/Home", ({ params }) => {
-      const { id } = params;
-      console.log("success");
-    });
-
     render(<NYCSchoolsHome />);
   });
 

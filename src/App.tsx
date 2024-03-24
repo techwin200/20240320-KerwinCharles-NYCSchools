@@ -10,10 +10,17 @@ const FallBack = () => {
 };
 
 const App = () => {
+  // The state for the table title is initialized here
+  // Children can use setTableTitle to set the table title
   const [tableTitle, setTableTitle] = useState<string>("");
 
   return (
     <div className="mr-50 ml-50 mb-0 pb-0">
+      {/* 
+      NYCSchoolsInfoContext provides the table title which can be 
+      displayed here, but set within any of the child components 
+      via Context
+      */}
       <NYCSchoolsInfoContext.Provider value={{ tableTitle, setTableTitle }}>
         <Header />
 
