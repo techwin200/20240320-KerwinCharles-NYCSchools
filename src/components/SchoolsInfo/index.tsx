@@ -14,7 +14,7 @@ import {
 import "ag-grid-community/styles/ag-grid.css"; // Mandatory CSS required by the grid
 import "ag-grid-community/styles/ag-theme-quartz.css"; // Optional Theme applied to the grid
 
-const TableTitle = "NYC High Schools Information - 2017";
+const TableTitle = "NYC High Schools Information Directory - 2017";
 const SchoolsInfo = () => {
   const { searchTerm } = useContext(SearchContext);
   const { setTableTitle } = useContext(NYCSchoolsInfoContext);
